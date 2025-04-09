@@ -12,5 +12,7 @@ urlpatterns = [
      # ✅ Agregar estas rutas
     path("editar-usuario/<int:id>/", views.editar_usuario, name="editar_usuario"),
     path("eliminar-usuario/<int:id>/", views.eliminar_usuario, name="eliminar_usuario"),
+    path("editar-plan/<int:id>/", views.editar_plan, name="editar_plan"),
+    path("eliminar-plan/<int:id>/", views.eliminar_plan, name="eliminar_plan"),
      
 ]

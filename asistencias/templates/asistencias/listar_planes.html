@@ -42,8 +42,8 @@
             <td>${{ plan.monto|intcomma }}</td>
             <td>{{ plan.estado }}</td>
             <td>
-              <a href="#" class="btn btn-sm btn-warning">✏️ Editar</a>
-              <a href="#" class="btn btn-sm btn-danger">🗑️ Eliminar</a>
+              <a href="{% url 'editar_plan' plan.id %}" class="btn btn-sm btn-warning">✏️ Editar</a>
+              <a href="{% url 'eliminar_plan' plan.id %}" class="btn btn-sm btn-danger" onclick="return confirm('¿Estás seguro de eliminar este plan?');">🗑️ Eliminar</a>
             </td>
           </tr>
           {% empty %}
