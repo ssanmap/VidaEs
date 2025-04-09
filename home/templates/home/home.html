@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block title %}Dashboard – Vidaes{% endblock %}
+{% block content %}
+
+<h1 class="text-center mb-4">👩‍⚕️ Panel de Control – Vidaes</h1>
+
+<div class="row justify-content-center">
+  <div class="col-md-6">
+    <a href="/asistencia/registrar-usuario/" class="btn btn-primary w-100 mb-3">
+      <i class="fas fa-user-plus"></i> Registrar Usuario
+    </a>
+    <a href="/asistencia/registrar-plan/" class="btn btn-success w-100 mb-3">
+      <i class="fas fa-file-signature"></i> Registrar Plan
+    </a>
+    <a href="/asistencia/registrar/" class="btn btn-info w-100 mb-3">
+      <i class="fas fa-calendar-check"></i> Registrar Asistencia
+    </a>
+    <a href="/asistencia/usuarios/" class="btn btn-outline-primary w-100 mb-3">
+      <i class="fas fa-users"></i> Ver Usuarios Registrados
+    </a>
+    <a href="/asistencia/planes/" class="btn btn-outline-success w-100 mb-3">
+      <i class="fas fa-clipboard-list"></i> Ver Planes Activos
+    </a>
+  </div>
+</div>
+
+{% endblock %}
